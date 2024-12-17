@@ -141,10 +141,12 @@ The ``event`` is shared between the two (but makes no sense in cancelling it on 
 
 ### <syntax lang="haxe">preStateSwitch()</syntax>, <syntax lang="haxe">postStateSwitch()</syntax>
 
-### <syntax lang="haxe">preStateCreate()</syntax>
+### <syntax lang="haxe">preStateCreate(state:FlxState)</syntax>
 
 Before `FlxG.game` calls `_state.create()`
 
-### <syntax lang="haxe">preUpdate()</syntax>, <syntax lang="haxe">update()</syntax>, <syntax lang="haxe">postUpdate()</syntax>
+### <syntax lang="haxe">preUpdate(elapsed:Float)</syntax>, <syntax lang="haxe">update(elapsed:Float)</syntax>, <syntax lang="haxe">postUpdate(elapsed:Float)</syntax>
+
+The ``elapsed`` is from `FlxG.elapsed`
 
 more to be documented soon
